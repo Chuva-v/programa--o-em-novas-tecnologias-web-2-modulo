@@ -3,7 +3,8 @@
     padding: 0;
 }
 body{
-    background-color: rgb(37, 37, 37);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header{
     position: absolute;
@@ -48,6 +49,7 @@ a{
     display: grid;
     justify-items: center;
     align-items: center;
+    transition: transform 0.2s ease;
 }
 a :hover{
     background-color: #ccff00;
@@ -60,6 +62,25 @@ a :hover{
     display: grid;
     justify-items: center;
     align-items: center;
+    animation: pular 0.5s ease;
+}
+.cat{
+    filter: drop-shadow(-1px 1px 1px #ccff00);
+    filter: drop-shadow(0 0 5px #ffffff);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px; 
+}
+@keyframes pular {
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    30% {
+        transform: translateY(-15px); /* Pula para cima */
+    }
+    60% {
+        transform: translateY(0); /* Volta à posição original */
+    }
 }
 .h22{
     display: grid;
@@ -70,7 +91,7 @@ a :hover{
     height: 70px;
 }
 .conteiner{
-    background-color: #ccff00;
+    background-color: #ccff0031;
     margin-left: 95px;
     width: 95vw;
     height: 100vh;
