@@ -65,6 +65,18 @@ a :hover{
     align-items: center;
     animation: pular 0.7s ease;
 }
+.haha{
+    font-size: 30px;
+}
+.hehe{
+    font-size: 30px;
+}
+.hoho{
+    font-size: 30px;
+}
+.huhu{
+    font-size: 30px;
+}
 .cat{
     filter: drop-shadow(-1px 1px 1px #ccff00);
     width: 70px;
